@@ -40,8 +40,8 @@ if(isset($_POST['Generate'])) {
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="bookroom.php">List of Companies</a></li>
-					<li><a href="booked.php">Random Password Generator</a></li>
+                    <li><a href="index.php">Home</a></li>
+					<li><a href="Companies.php">List of Companies</a></li>
 					<?php
                         session_start();
                         if(isset($_SESSION["online"]) && $_SESSION["online"] == true){
@@ -68,7 +68,7 @@ if(isset($_POST['Generate'])) {
 				<div class="col-md-12 col-sm-12">
 					<div class="showcase-left">
 
-				<h1 class="a">You can use this page to generate a random secure password!  <?php echo generateRandomPassword(); ?> </h1>
+				<h1 class="a">You can use this page to generate a random secure password!</h1>
 
 				<form method="post">
 					<input type="submit" name="Generate a password"
