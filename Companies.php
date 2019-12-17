@@ -87,7 +87,7 @@ $result = $conn->query($sql);
     <br>
     <hr>
     <div>
-        	<nav class="navbar navbar-default navbar-fixed-top">
+        	<nav class="navbar">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -101,7 +101,6 @@ $result = $conn->query($sql);
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
                     <?php
-                    
                     if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
                             echo'<li><a href="#">'.$row["Company"].'</a></li>';
