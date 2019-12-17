@@ -103,7 +103,7 @@ $result = $conn->query($sql);
                     <?php
                     if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
-                            echo'<li><a href="#">'.$row["Company"].'</a></li>';
+                            echo'<li><a href="CompanyExample.php">'.$row["Company"].'</a></li>';
                         }
                     }
                     else{
