@@ -1,4 +1,5 @@
 <?php
+$_SESSION["online"]=false;
 session_start();
 $servername = "den1.mysql2.gear.host";
 $username = "finalprojectmark";
@@ -12,7 +13,7 @@ if ($conn->connect_error) {
 }
 $sql = "SELECT Company FROM Companies";
 $result = $conn->query($sql);
-if(isset($_SESSION["online"]) && $_SESSION["online"] != true){
+if(isset($_SESSION["online"]) && $_SESSION["online"] == false){
    header("Location: index.php");
 
 
