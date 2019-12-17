@@ -82,7 +82,7 @@ if(isset($_POST['Generate'])) { function generateRandomPassword($length = 16) {
             </div>
         </div>
         <div>
-            <?php echo generateRandomPassword();
+            <?php echo generateRandomPassword(); ?>
         </div>
 	</section>
 
