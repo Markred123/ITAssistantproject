@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 }
 $sql = "SELECT Company FROM Companies";
 $result = $conn->query($sql);
-if(isset($_SESSION["ssername"] == null){
+if(isset($_SESSION["username"] == null){
    header("Location: index.php");
 
 
