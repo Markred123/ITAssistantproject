@@ -3,7 +3,7 @@ session_start();
 $servername = "den1.mysql2.gear.host";
 $username = "finalprojectmark";
 $password = "Av3AVTpAmP??";
-$dbname = "plumservices";
+$dbname = "finalprojectmark";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
