@@ -73,8 +73,10 @@ if(isset($_POST['Generate'])) {
 				<form method="post">
 					<input type="submit" name="Generate a password"
 						class="button" value="Generate" />
+                    <?php echo getPassword(); ?>
 				</form>
-				<?php echo getPassword(); ?>
+                <?php echo generateRandomPassword(); ?>
+				
 
 
 
