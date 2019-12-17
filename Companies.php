@@ -1,17 +1,5 @@
 <?php
-session_start();
-$servername = "den1.mysql2.gear.host";
-$username = "finalprojectmark";
-$password = "Av3AVTpAmP??";
-$dbname = "finalprojectmark";
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-$sql = "SELECT Company FROM Companies";
-$result = $conn->query($sql);
+
 
 ?>
 <!DOCTYPE html>
