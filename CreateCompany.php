@@ -75,13 +75,13 @@ session_start();
 	<hr>
 	<form action="/action_page.php">
         Company:<br>
-        <input type="text" name="company name" value="CompanyName"><br>
+        <input type="text" name="companyname"><br>
         Primary Contact:<br>
-        <input type="text" name="primary contact" value="contactName"><br><br>
+        <input type="text" name="primarycontact"><br><br>
         Phone Number:<br>
-        <input type="text" name="Phone Number" value="PhoneNumber"><br><br>
+        <input type="text" name="PhoneNumber"><br><br>
         Email Address:<br>
-        <input type="text" name="lastname" value="Mouse"><br><br>
+        <input type="text" name="emaiil"><br><br>
         <input type="submit" value="Submit">
     </form>
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
