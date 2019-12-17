@@ -141,8 +141,8 @@ error_reporting(E_ALL);
 		  </div>
 		  <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
-					<li><a href="bookroom.php">Book a room</a></li>
-					<li><a href="booked.php">View booked rooms</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="Companies.php">Companies</a></li>
 					<?php 
                       
                         if(isset($_SESSION["online"]) && $_SESSION["online"] == true){
