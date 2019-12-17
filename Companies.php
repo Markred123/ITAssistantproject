@@ -1,5 +1,17 @@
 <?php
-
+session_start();
+$servername = "den1.mysql2.gear.host";
+$username = "finalprojectmark";
+$password = "Av3AVTpAmP??";
+$dbname = "finalprojectmark";
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+$sql = "SELECT Company FROM Companies";
+$result = $conn->query($sql);
 
 ?>
 <!DOCTYPE html>
@@ -88,18 +100,7 @@
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-                    <?php 
-                    if ($result->num_rows > 0) {
-                        // output data of each row
-                        while($row = $result->fetch_assoc()) {
-                            echo'<li><a href="#">'.$row["Company"]'</li>'
-                        }
-        
-    
-        
-        
-        
-                    ?>
+
 					
 	
 
