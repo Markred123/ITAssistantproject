@@ -35,7 +35,7 @@ session_start();
 
                         }
                         else echo '<li><a href="login.php">Login</a></li> <li><a href="signup.php">Sign-Up</a></li>';
-                    if(isset($_SESSION["online"]) && $_SESSION["AdminStatus"] == true){
+                    if(isset($_SESSION["online"]) && $_SESSION["AdminStatus"] == 'Admin'){
                         echo'<li><a href="#">Password Storage</a></li>'
                     }
 
