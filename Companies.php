@@ -100,7 +100,17 @@ $result = $conn->query($sql);
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-
+                    <?php 
+                    if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                            echo'<li><a href="#">'.$row["Company"]'</li>'
+                        }
+                    }
+                    else{
+                        echo "theres been an error"
+                    }
+                    $conn->close();
+                    ?>
 					
 	
 
