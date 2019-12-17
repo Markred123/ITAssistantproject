@@ -26,12 +26,12 @@ session_start();
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="Companies.php">List of Companies</a></li>
 					<li><a href="RandomPassword.php">Random Password Generator</a></li>
 					<?php
                         session_start();
                         if(isset($_SESSION["online"]) && $_SESSION["online"] == true){
-                            echo '<li><a href="SignOut.php">Sign out</a></li>' ;
+                            echo '<li><a href="Companies.php">List of Companies</a></li>
+                            <li><a href="SignOut.php">Sign out</a></li>' ;
 
                         }
                         else echo '<li><a href="login.php">Login</a></li> <li><a href="signup.php">Sign-Up</a></li>';

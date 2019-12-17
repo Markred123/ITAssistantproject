@@ -9,6 +9,7 @@ if(isset($_SESSION["online"]) && $_SESSION["online"] == true){
 }
 require_once "configuration.php";
 
+
 $username = $password = "";
 $username_error = $password_error = "";
 // processing the data
@@ -29,7 +30,8 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
     }
     //validation of login stuff
     if(empty($username_error) && empty($password_error)){
-        $sql = "SELECT id, username, password FROM users WHERE username = ?";
+        $sql = "SELECT id, username, password, User_Type FROM users WHERE username = ?";
+    
         if($stmt = mysqli_prepare($link, $sql)){
             mysqli_stmt_bind_param($stmt, "s", $param_username);
             $param_username = $username;
@@ -39,15 +41,17 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
                 mysqli_stmt_store_result($stmt);
                 // checks if theres records in the database
                 if(mysqli_stmt_num_rows($stmt) == 1){
-                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
+                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password, $User_Type);
                     if(mysqli_stmt_fetch($stmt)){
                         if(password_verify($password, $hashed_password)){
                             session_start();
 
 
                             $_SESSION["online"] = true;
+                            $_SESSION["AdminStatus"] = $User_Type;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
+                            $_SESSION["status"] = 
                             header("location: index.php");
 
 
