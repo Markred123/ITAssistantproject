@@ -71,16 +71,17 @@ session_start();
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor..</p>
+
     </div>
     <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor..</p>
+      <h3>Introduction</h3>
+      <p>This application is designed to be used by Managed Services Companies 
+        to assist with the maintenence of their clients. The Managed Service Company has an area
+        to store files relating to the individual companies and a section to store passwords. Employee's of the Managed Service Companies client's will be able to upload and view their own files.
+        The application is primarily used for securely storing files and passwords</p>
     </div>
     <div class="col-sm-4">
-      <h3>Column 3</h3>
-      <p>Lorem ipsum dolor..</p>
+
     </div>
   </div>
 </div>
@@ -91,23 +92,7 @@ session_start();
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-	<script>
-		$(function() {
-			// Smooth Scrolling
-			$('a[href*="#"]:not([href="#"])').click(function() {
-				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-					var target = $(this.hash);
-					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-					if (target.length) {
-						$('html, body').animate({
-							scrollTop: target.offset().top
-						}, 1000);
-						return false;
-					}
-				}
-			});
-		});
 
-	</script>
+	
 </body>
 </html>
