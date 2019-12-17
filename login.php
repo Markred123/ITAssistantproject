@@ -159,7 +159,7 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
 			                    	<div class="form-group<?php echo (!empty($username_error)) ? 'has-error' : ''; ?>">
 										<label>Username</label>
 			                    		<label class="sr-only" for="form-username">Username</label>
-			                        	<input type="email" name="username" class="form-control" placeholder="Your username" maxlength="40" value="<?php echo $username; ?>">
+			                        	<input type="text" name="username" class="form-control" placeholder="Your username" maxlength="40" value="<?php echo $username; ?>">
                                     <span class="help-block"><?php echo $username_error; ?></span>
 			                        </div>
 			                        <div class="form-group<?php echo (!empty($password_error)) ? 'has-error' : ''; ?>">

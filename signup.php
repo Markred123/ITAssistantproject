@@ -182,7 +182,7 @@ error_reporting(E_ALL);
 								<form action="<?php echo   htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 									<div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
 										<label>Username</label>
-										<input type="email" name="username" class="form-control" placeholder="e.g JohnSmith" maxlength="40" value="<?php echo $username; ?>">
+										<input type="text" name="username" class="form-control" placeholder="e.g JohnSmith" maxlength="40" value="<?php echo $username; ?>">
 										<span class="help-block"><?php echo $username_err; ?></span>
 									</div>    
 									<div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
