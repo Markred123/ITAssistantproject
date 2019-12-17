@@ -68,6 +68,16 @@ session_start();
 		</div>
 		</div>
 	</section>
+      <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+Equal-width columns can be broken into multiple lines, but there was a Safari flexbox bug that prevented this from working without an explicit flex-basis or border. There are workarounds for older browser versions, but they shouldn’t be necessary if you’re up-to-date.    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
 
 	<br>
 	<hr>
