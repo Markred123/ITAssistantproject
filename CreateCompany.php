@@ -60,8 +60,8 @@ session_start();
 				<div class="col-md-12 col-sm-12">
 					<div class="showcase-left">
 			<div class="jumbotron">
-				<h1 class="a">Work Assistant</h1>
-				<h2 class="b">You can use this website to safely store your files and passwords</h2>
+				<h1 class="a">Create a company</h1>
+				<h2 class="b">Enter the companies information below</h2>
 				<hr class="my-4">
 				<a class="btn btn-primary btn-lg" href="bookroom.php" role="button">View Companies</a>
 			</div>
@@ -73,17 +73,19 @@ session_start();
 
 	<br>
 	<hr>
-	<form action="/action_page.php">
+    <div class="col-md-4 col-md-offset-4">
+	<form action="CreateCompanys.php" method="post">
         Company:<br>
         <input type="text" name="companyname"><br>
         Primary Contact:<br>
         <input type="text" name="primarycontact"><br><br>
         Phone Number:<br>
-        <input type="text" name="PhoneNumber"><br><br>
+        <input type="text" name="phonenumber"><br><br>
         Email Address:<br>
-        <input type="text" name="emaiil"><br><br>
+        <input type="text" name="email"><br><br>
         <input type="submit" value="Submit">
     </form>
+    </div>
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
