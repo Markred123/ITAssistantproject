@@ -104,7 +104,7 @@ $result = $conn->query($sql);
                     
                     if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
-                            echo'<li><a href="#">'.$row["Company"].'</li>';
+                            echo'<li><a href="#">'.$row["Company"].'</a></li>';
                         }
                     }
                     else{
