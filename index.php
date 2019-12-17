@@ -39,7 +39,7 @@ session_start();
                     if(isset($_SESSION["online"]) && $_SESSION["AdminStatus"] == 'Admin'){
                         echo'<li><a href="#">Password Storage</a></li>';
                     }
-                    echo '<li><a>'$_SESSION["username"]'</a></li>';
+                    echo '<li><a href="#">'$_SESSION["username"]'</a></li>';
 
 
 
