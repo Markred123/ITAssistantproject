@@ -60,7 +60,7 @@ session_start();
 				<h1 class="a">Work Assistant</h1>
 				<h2 class="b">You can use this website to safely store your files and passwords</h2>
 				<hr class="my-4">
-				<a class="btn btn-primary btn-lg" href="bookroom.php" role="button">View Companies</a>
+				<a class="btn btn-primary btn-lg" href="Companies.php" role="button">View Companies</a>
 			</div>
 		</div>
 		</div>
