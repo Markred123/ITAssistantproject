@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_POST['Generate'])) { function generateRandomPassword($length = 16) {
+function generateRandomPassword($length = 16) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
     $randomString = '';
@@ -9,7 +9,11 @@ if(isset($_POST['Generate'])) { function generateRandomPassword($length = 16) {
     }
     return $randomString;
 }
-                              }
+if(isset($_POST['Generate'])) {
+	function getPassword(){
+				 echo generateRandomPassword();
+			 }
+		 }
 ?>
 <!DOCTYPE html>
 <html>
@@ -71,6 +75,7 @@ if(isset($_POST['Generate'])) { function generateRandomPassword($length = 16) {
 						class="button" value="Generate" />
                     
 				</form>
+                        <h2><?php echo generateRandomPassword(); ?></h2>
                 
 				
 
@@ -82,7 +87,7 @@ if(isset($_POST['Generate'])) { function generateRandomPassword($length = 16) {
             </div>
         </div>
         <div>
-            <?php echo generateRandomPassword(); ?>
+            
         </div>
 	</section>
 
