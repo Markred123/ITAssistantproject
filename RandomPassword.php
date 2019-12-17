@@ -20,7 +20,7 @@ if(isset($_POST['Generate'])) {
 
 <head>
 	<meta charset="utf-8">
-	<title>Room booking</title>
+	<title>Random Password</title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">

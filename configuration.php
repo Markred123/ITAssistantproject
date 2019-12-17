@@ -6,7 +6,7 @@ Database Information,
 */
 define('DB_SERVER','den1.mysql2.gear.host');
 define('DB_USERNAME','finalprojectmark');
-define ('DB_PASSWORD', 'P@Av3AVTpAmP??');
+define ('DB_PASSWORD', 'Av3AVTpAmP??');
 define ('DB_NAME', 'finalprojectmark');
 
 
