@@ -52,13 +52,13 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
 
 
                 } else {
-                            $password_error = "There is an issue with the username or password provided, please try again";
+                            $password_error = "An error has occured with the username and password, please try again";
                         }
                     }
 
 
                 }else{
-                        $username_error = "There is an issue with the username or password provided, please try again";
+                        $username_error = "An error has occured with the username and password, please try again";
 
                     }
                 } else{
@@ -122,6 +122,7 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
                             echo '<li><a href="SignOut.php">Sign out</a></li>' ;
 
                         }
+                        else echo '<li><a href="signup.php">Sign-Up</a></li>';
 
 
 
