@@ -5,7 +5,7 @@ function generateRandomPassword($length = 16) {
     $charactersLength = strlen($characters);
     $randomString = '';
     for ($i = 0; $i < $length; $i++) {
-        $randomString .= $characters[rand(0, $charactersLength - 1)];
+        $randomString = $characters[rand(0, $charactersLength - 1)];
     }
     return $randomString;
 }
@@ -68,7 +68,7 @@ if(isset($_POST['Generate'])) {
 				<div class="col-md-12 col-sm-12">
 					<div class="showcase-left">
 
-				<h1 class="a">You can use this page to generate a random secure password! </h1>
+				<h1 class="a">You can use this page to generate a random secure password!  <?php echo generateRandomPassword(); ?> </h1>
 
 				<form method="post">
 					<input type="submit" name="Generate a password"
