@@ -15,7 +15,7 @@ $Email = $_POST['email'];
 $mysqli = new mysqli("den1.mysql2.gear.host", $user, $pass, $database);
 mysqli_select_db($mysqli, $database) or die( "Unable to select database2");
 //
-$sql = "INSERT INTO RoomBooking VALUES('','$CompanyName','$Contact','$Phone','$Email','')";
+$sql = "INSERT INTO Companies VALUES('','$CompanyName','$Contact','$Phone','$Email','')";
 
 $mysqli->query($sql);
 $mysqli->close();
