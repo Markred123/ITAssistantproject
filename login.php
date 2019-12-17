@@ -52,13 +52,13 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
 
 
                 } else {
-                            $password_error = "Password Incorrect";
+                            $password_error = "There is an issue with the username or password provided, please try again";
                         }
                     }
 
 
                 }else{
-                        $username_error = "Username Incorrect";
+                        $username_error = "There is an issue with the username or password provided, please try again";
 
                     }
                 } else{
@@ -114,15 +114,14 @@ if ($_SERVER ["REQUEST_METHOD"] == "POST"){
 		  </div>
 		  <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
-					<li><a href="bookroom.php">Book a room</a></li>
-					<li><a href="booked.php">View booked rooms</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="Companies.php">Companies</a></li>
 					<?php
                         session_start();
                         if(isset($_SESSION["online"]) && $_SESSION["online"] == true){
                             echo '<li><a href="SignOut.php">Sign out</a></li>' ;
 
                         }
-                        else echo '<li><a href="login.php">Login</a></li> <li><a href="signup.php">Sign-Up</a></li>';
 
 
 
