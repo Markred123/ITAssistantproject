@@ -1,12 +1,25 @@
 <?php
 session_start();
+$servername = "den1.mysql2.gear.host";
+$username = "finalprojectmark";
+$password = "Av3AVTpAmP??";
+$dbname = "plumservices";
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+$sql = "SELECT Company FROM Companies";
+$result = $conn->query($sql);
+
 ?>
 <!DOCTYPE html>
 <html>
 
 <head>
 	<meta charset="utf-8">
-	<title>Room booking</title>
+	<title>Companies</title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -65,14 +78,52 @@ session_start();
 				<hr class="my-4">
 				<a class="btn btn-primary btn-lg" href="CreateCompany.php" role="button">Create a new company</a>
 			</div>
-		</div>
-		</div>
-		</div>
-		</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</section>
 
-	<br>
-	<hr>
+    <br>
+    <hr>
+    <div>
+        	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="img/p.jpg" width="30" height="30" alt=""> TheBook</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+                    <?php 
+                    if ($result->num_rows > 0) {
+                        // output data of each row
+                        while($row = $result->fetch_assoc()) {
+                            echo'<li><a href="#">'.$row["Company"]'</li>'
+                        }
+        
+    
+        
+        
+        
+                    ?>
+					
+	
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+        
+    
+    </div>
 	
 
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
