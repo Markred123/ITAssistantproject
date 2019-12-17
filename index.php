@@ -32,8 +32,7 @@ session_start();
                         session_start();
                         if(isset($_SESSION["online"]) && $_SESSION["online"] == true){
                             echo '<li><a href="Companies.php">List of Companies</a></li>
-                            <li><a href="SignOut.php">Sign out</a></li>
-                            <li><a href="#">'echo $_SESSION["username"]'</a></li>    ' ;
+                            <li><a href="SignOut.php">Sign out</a></li>' ;
 
                         }
                         else echo '<li><a href="login.php">Login</a></li> <li><a href="signup.php">Sign-Up</a></li>';
