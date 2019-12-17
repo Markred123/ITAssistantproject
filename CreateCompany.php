@@ -60,10 +60,10 @@ session_start();
 				<div class="col-md-12 col-sm-12">
 					<div class="showcase-left">
 			<div class="jumbotron">
-				<h1 class="a">Companies</h1>
-				<h2 class="b">Select which company you'd like to access below</h2>
+				<h1 class="a">Work Assistant</h1>
+				<h2 class="b">You can use this website to safely store your files and passwords</h2>
 				<hr class="my-4">
-				<a class="btn btn-primary btn-lg" href="CreateCompany.php" role="button">Create a new company</a>
+				<a class="btn btn-primary btn-lg" href="bookroom.php" role="button">View Companies</a>
 			</div>
 		</div>
 		</div>
@@ -73,7 +73,12 @@ session_start();
 
 	<br>
 	<hr>
-	
+	<div class="sidenav">
+	  <a href="#">About</a>
+	  <a href="#">Services</a>
+	  <a href="#">Clients</a>
+	  <a href="#">Contact</a>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
